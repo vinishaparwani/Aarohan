@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D334D"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.chan.project.Dashboard"
+    tools:showIn="@layout/activity_dashboard">
+
+
+    <TextView
+        android:id="@+id/dashText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Dashboard"
+        android:textColor="#fff"
+        android:textSize="30dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeInner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="40dp">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dashboard_btn_border" />
+
+            <ImageButton
+                android:id="@+id/event_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dashboard_action_btn"
+                android:backgroundTint="#FFD740"
+                android:src="@drawable/event_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dip"
+                android:text="Events"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dashboard_btn_border" />
+
+            <ImageButton
+                android:id="@+id/btn_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dashboard_action_btn"
+                android:backgroundTint="#43ADF1"
+                android:src="@drawable/gallery_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_gallery"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dip"
+                android:text="Gallery"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/relativeEvent"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dashboard_btn_border" />
+
+            <ImageButton
+                android:id="@+id/btn_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dashboard_action_btn"
+                android:backgroundTint="#5C9BBB"
+                android:src="@drawable/about_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_about"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dip"
+                android:text="About"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/relativeGallery"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dashboard_btn_border" />
+
+            <ImageButton
+                android:id="@+id/btn_developed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dashboard_action_btn"
+                android:backgroundTint="#72C6E9"
+                android:src="@drawable/developer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_developed"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dip"
+                android:text="Developer"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:text="Login"/>
+
+
+</RelativeLayout>
+
+

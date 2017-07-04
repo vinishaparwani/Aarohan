@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_event"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.chan.project.EventActivity"
+    tools:showIn="@layout/activity_event">
+
+    <Button
+        android:id="@+id/technical_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/technical_btn_bg"
+        android:gravity="bottom|center"
+        android:paddingTop="14dp"
+        android:text="Technical"
+        android:textAlignment="gravity"
+        android:textSize="8sp" />
+
+    <!--<Button
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_alignParentBottom="true"
+        android:textSize="8sp"
+        android:textAlignment="gravity"
+        android:gravity="bottom"
+        android:background="@drawable/blank_bg"
+        android:text="Technical"/>-->
+
+
+    <Button
+        android:id="@+id/club_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/technical_btn"
+        android:background="@drawable/club_event_bg"
+        android:gravity="bottom|center"
+        android:paddingTop="14dp"
+        android:text="Club"
+        android:textAlignment="gravity"
+        android:textSize="8sp" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:id="@+id/sports_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/cultural_btn"
+        android:background="@drawable/sports_event_bg"
+        android:gravity="bottom|center"
+        android:paddingTop="14dp"
+        android:text="Sports"
+        android:textAlignment="gravity"
+        android:textSize="8sp" />
+
+
+
+    <Button
+        android:id="@id/cultural_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/cultural_event_bg"
+        android:gravity="bottom|center"
+        android:paddingTop="14dp"
+        android:text="Cultural"
+        android:textAlignment="gravity"
+        android:textSize="8sp" />
+
+</RelativeLayout>
